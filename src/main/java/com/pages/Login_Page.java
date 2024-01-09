@@ -10,6 +10,7 @@ public class Login_Page {
 	//1. By Locators
 	private By username_ID = By.id("user-name");
 	private By password_ID = By.id("password");
+	private By login_button_ID = By.id("login-button");
 	
 	//2. Constructor of the page class
 	public Login_Page(WebDriver driver) {
@@ -36,5 +37,9 @@ public class Login_Page {
 	public void enter_password(String password) {
 		driver.findElement(password_ID).sendKeys(password);
 	}
-
+	
+	public void click_login_button() {
+		driver.findElement(login_button_ID).click();
+	}
+	
 }

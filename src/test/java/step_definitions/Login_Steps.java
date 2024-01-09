@@ -2,6 +2,7 @@ package step_definitions;
 import org.junit.Assert;
 
 import com.factory.DriverFactory;
+import com.pages.Product_Page;
 import com.pages.Login_Page;
 
 import io.cucumber.java.en.*;
@@ -22,7 +23,7 @@ public class Login_Steps {
 	}
 
 	@Then("the title should be {string}")
-	public void the_title_should_be(String string) {
+	public void the_title_should_be(String pageTitle) {
 		Assert.assertTrue(title.contains(title));
 	}
 
@@ -32,4 +33,19 @@ public class Login_Steps {
 	    Assert.assertTrue(loginPage.is_password_field_exist());
 	}
 	
+	@When("user enters username {string}")
+	public void user_enters_username(String username) {
+		loginPage.enter_username(username);
+	}
+	
+	@And("user enters password {string}")
+	public void user_enters_password(String password) {
+		loginPage.enter_password(password);
+	}
+	
+	@And("user clicks login button")
+	public void user_clicks_login_button() {
+		loginPage.click_login_button();
+	}
+
 }
