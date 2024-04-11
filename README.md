@@ -15,3 +15,6 @@ This project currently uses the following tools/libraries.
 ### Built with
 - __[Robot Framework](https://robotframework.org/)__
 - __[Python 3.9](https://www.python.org/downloads/release/python-3914/)__
+
+### Author
+- Jeric Al P. Fernandez - active Software Automation Tester
