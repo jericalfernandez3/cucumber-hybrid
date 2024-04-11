@@ -11,3 +11,7 @@ This project currently uses the following tools/libraries.
 - __[Chromedriver](https://chromedriver.chromium.org/downloads)__
 - __[Visual Studio Code](https://code.visualstudio.com/download)__
 - __[Windows Subsystem Linux (WSL)](https://ubuntu.com/desktop/wsl)__
+
+### Built with
+- __[Robot Framework](https://robotframework.org/)__
+- __[Python 3.9](https://www.python.org/downloads/release/python-3914/)__
